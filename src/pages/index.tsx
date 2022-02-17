@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <section className="w-screen min-h-screen" >
+    <section className="max-w-screen min-h-screen" >
         <img
         className="w-full h-96 object-cover"
         src="https://blog.rocketseat.com.br/content/images/2019/03/Iniciando_com_GraphQL_no_NodeJS_e_ExpressJS.png" alt="graphql" 
