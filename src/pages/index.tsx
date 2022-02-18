@@ -27,7 +27,7 @@ export default function Home({posts}:any) {
         >{posts.data.title[0].text}</h1>
         <p
         className="mt-4 mb-6 font-semibold"
-        >4 de Fev de 2022</p>
+        >4 de Fevereiro de 2022</p>
 
 
         {posts.data.main_text.map((par:any) => (
