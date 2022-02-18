@@ -30,7 +30,7 @@ export default function Home({posts}:any) {
         >4 de Fev de 2022</p>
 
 
-        {posts.data.main_text.map(par => (
+        {posts.data.main_text.map((par:any) => (
           <p key={par.text} className={paragraphClass} >{par.text}</p>
         ) )}
 
