@@ -24,7 +24,7 @@ export default function Home({posts}:any){
       className=" max-w-[1300px] min-h-screen mx-auto gap-9 pt-16 px-6 md:px-0 flex flex-wrap justify-center "
       >
         { posts.results.map((post:any) => (
-          <PostCard uid={post.uid} src={post.data.image_url.url} title={post.data.title[0].text} />
+          <PostCard key={post.uid} uid={post.uid} src={post.data.image_url.url} title={post.data.title[0].text} />
         ))}
         
 
