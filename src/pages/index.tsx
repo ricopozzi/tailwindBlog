@@ -2,6 +2,7 @@ import { client } from "../../prismic-configuration"
 import { Header } from "../components/Header"
 import { PostCard } from "../components/PostCard"
 import Prismic from 'prismic-javascript'
+import { Footer } from "../components/Footer"
 
 export default function Home({posts}:any){
 
@@ -10,7 +11,7 @@ export default function Home({posts}:any){
     <>
       <Header />
       <div
-      className="px-7 max-w-screen flex-col h-96 bg-gradient-to-r from-cyan-500 to-blue-500 ... flex justify-center items-center"
+      className="px-7 max-w-screen flex-col h-96 bg-gradient-to-r from-cyan-400 to-blue-700 ... flex justify-center items-center"
       >
         <h1
         className="font-bold text-5xl text-white text-center"
@@ -21,7 +22,7 @@ export default function Home({posts}:any){
         </p>
       </div>
       <section
-      className=" max-w-[1300px] min-h-screen mx-auto gap-9 pt-16 px-6 md:px-0 flex flex-wrap justify-center "
+      className=" max-w-[1300px] min-h-min mx-auto pb-10 gap-9 pt-16 px-6 md:px-0 flex flex-wrap justify-center "
       >
         { posts.results.map((post:any) => (
           <PostCard key={post.uid} uid={post.uid} src={post.data.image_url.url} title={post.data.title[0].text} />
@@ -29,6 +30,7 @@ export default function Home({posts}:any){
         
 
       </section>
+      <Footer />
     </>
   )
 }

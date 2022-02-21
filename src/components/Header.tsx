@@ -13,7 +13,7 @@ export function Header(){
 
     return(
         <header
-        className="w-screen h-20 backdrop-blur-lg fixed flex items-center pl-12  "
+        className="w-screen h-16 backdrop-blur-sm fixed flex items-center pl-12  "
         >
             <h1
             className="font-sans text-4xl font-bold text-slate-900 underline cursor-pointer "
