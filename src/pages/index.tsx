@@ -5,8 +5,8 @@ import Prismic from 'prismic-javascript'
 import { Footer } from "../components/Footer"
 
 export default function Home({posts}:any){
+  console.log(posts)
 
-  console.log(posts.results)
   return(
     <>
       <Header />
@@ -25,7 +25,13 @@ export default function Home({posts}:any){
       className=" max-w-[1300px] min-h-min mx-auto pb-10 gap-9 pt-16 px-6 md:px-0 flex flex-wrap justify-center "
       >
         { posts.results.map((post:any) => (
-          <PostCard key={post.uid} uid={post.uid} src={post.data.image_url.url} title={post.data.title[0].text} />
+          <PostCard 
+          key={post.uid} 
+          uid={post.uid} 
+          src={post.data.image_url.url} 
+          title={post.data.title[0].text} 
+          date={post.first_publication_date}
+          />
         ))}
         
 

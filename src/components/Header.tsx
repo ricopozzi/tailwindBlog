@@ -16,9 +16,9 @@ export function Header(){
         className="w-screen h-16 backdrop-blur-sm fixed flex items-center pl-12  "
         >
             <h1
-            className="font-sans text-4xl font-bold text-slate-900 underline cursor-pointer "
+            className="font-sans text-4xl font-bold text-slate-900  cursor-pointer "
             onClick={goToHomePage}
-            >Blogy</h1>
+            >|&nbsp; Blogy</h1>
 
         </header>
     )
