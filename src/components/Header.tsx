@@ -12,7 +12,7 @@ export function Header() {
   };
 
   return (
-    <header className='w-screen h-16 backdrop-blur-sm  flex items-center pl-12  '>
+    <header className='max-w-screen h-16 backdrop-blur-sm  flex items-center pl-12  '>
       <h1
         className='font-sans text-4xl font-bold text-neutral-600 underline decoration-sky-500  cursor-pointer '
         onClick={goToHomePage}
