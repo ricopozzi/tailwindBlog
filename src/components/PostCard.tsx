@@ -20,7 +20,7 @@ export function PostCard({ uid, src, title, date }: PostCardProps) {
     <div
       className='w-full md:w-[22rem] h-[25rem] ]
         bg-white cursor-pointer rounded-lg border
-        shadow-md hover:shadow-2xl ease-in-out duration-300 hover:-translate-y-4'
+        shadow-md hover:shadow-2xl ease-in-out duration-500 hover:-translate-y-2'
       onClick={handleCardClick}
     >
       <img src={src} alt='' className=' rounded-t-lg h-1/2 w-full ' />
