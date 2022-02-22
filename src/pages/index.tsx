@@ -3,10 +3,9 @@ import { Header } from "../components/Header";
 import { PostCard } from "../components/PostCard";
 import Prismic from "prismic-javascript";
 import { Footer } from "../components/Footer";
+import { Carousel } from "../components/Carousel";
 
 export default function Home({ posts }: any) {
-  console.log(posts);
-
   return (
     <>
       <Header />
@@ -21,6 +20,10 @@ export default function Home({ posts }: any) {
         </p>
       </div>
       <section className=' max-w-[1300px] min-h-min mx-auto pb-10 gap-9 pt-16 px-6 md:px-0 flex flex-wrap justify-center '>
+        <Carousel
+          posts={[posts.results[0], posts.results[1], posts.results[2]]}
+        />
+
         {posts.results.map((post: any) => (
           <PostCard
             key={post.uid}

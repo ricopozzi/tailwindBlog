@@ -17,7 +17,7 @@ export function Header() {
         className='font-sans text-4xl font-bold text-neutral-600 underline decoration-sky-500  cursor-pointer '
         onClick={goToHomePage}
       >
-        |&nbsp; Blogy
+        Blogy
       </h1>
     </header>
   );
