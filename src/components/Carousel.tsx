@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { useRouter } from "next/router";
 
 interface CarouselProps {
@@ -53,13 +53,13 @@ export function Carousel({ posts }: CarouselProps) {
               className='rounded-full hover:animate-pulse'
               onClick={handleArrowLeft}
             >
-              <HiArrowSmLeft color='#fff' size={32} />
+              <MdKeyboardArrowLeft color='#fff' size={32} />
             </button>
             <button
               className='ml-6 rounded-full hover:animate-pulse'
               onClick={handleArrowRight}
             >
-              <HiArrowSmRight color='#fff' size={32} />
+              <MdKeyboardArrowRight color='#fff' size={32} />
             </button>
           </div>
         </div>
